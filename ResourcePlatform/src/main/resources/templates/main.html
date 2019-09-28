@@ -1,9 +1,9 @@
 <html>
   <head><title>Transparent Drop Down Navigation Menu</title>
-    <link rel="stylesheet" href="static/css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mainStyle.css" th:href="@{/css/mainStyle.css}">
   </head>
   <body>
-    <ul>
+    <ul class="navbar">
       <li><a href="#">Home</a></li>
       <li><a>About</a>
         <ul>
@@ -29,5 +29,14 @@
       </li>
       <li><a href="#">News</a></li>
     </ul>
+    
+    <div class="business_container">
+    	<ul class="business">
+    		<li class="myBusiness"><a href="">Business Name</a></li>
+    		<li class="myBusiness"><a href="">Business Name</a></li>
+   			<li class="myBusiness"><a href="">Business Name</a></li>
+    		<li class="new_business"><a href="">New Business</a></li>
+    	</ul>
+    </div>
   </body>
 </html>
