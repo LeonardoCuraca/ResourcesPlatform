@@ -1,0 +1,87 @@
+body {
+	background: url('../img/nature.jpg') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+}
+
+.navbar {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.navbar li {
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.navbar li a {	
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.navbar li a:hover {
+	background-color: green;
+}
+
+.navbar li ul li {
+	margin-left: -40px;
+	display: none;
+}
+
+.navbar li:hover ul li {
+	display: block;
+}
+
+.business_container {
+	margin: 0px;
+	padding-top: 100px;
+}
+
+.business {
+	padding: 0px;
+	list-style: none;
+}
+
+.business li {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.myBusiness {
+	width: 250px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: rgb(0, 0, 0, 0.7);
+}
+
+.new_business {
+	width: 250px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.business li a:hover {
+  	background-color: rgba(0, 128, 0, 0.5);
+}
+
+.business li a {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	display: block;
+}

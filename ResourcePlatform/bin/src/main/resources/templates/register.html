@@ -1,0 +1,35 @@
+<html>
+  <head><title>Transparent Login Form with Floating Placeholder</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/css/loginStyle.css" th:href="@{/css/loginStyle.css}">
+  </head>
+  <body>
+    <div class="box">
+      <h2>Registro</h2>
+      <form action="" method="post">
+        <div class="inputBox">
+          <input type="text" name="register_name" required>
+          <label>Nombres</label>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="register_lastname" required>
+          <label>Apellidos</label>
+        </div>
+        <div class="inputBox">
+          <input type="email" name="register_email" required>
+          <label>Correo</label>
+        </div>
+        <div class="inputBox">
+          <input type="password" name="register_password" required>
+          <label>Contraseña</label>
+        </div>
+        <div class="inputBox">
+          <input type="password" name="confirm_password" required>
+          <label>Confirmar Contraseña</label>
+        </div>
+        <input type="submit" name="" value="Registrarse">
+        <input type="reset" name="" value="Limpiar">
+      </form>
+    </div>
+  </body>
+</html>
