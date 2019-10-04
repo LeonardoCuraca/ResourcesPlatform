@@ -1,89 +1,90 @@
 package com.ResourcePlatform.demo.model;
 
 public class Usuario {
-	private int id;
-	private String negocio;
-	private String nombres;
-	private String apellidos;
-	private String email;
-	private String password;
-	private String genero;
-	private String detalles;
+	private int usuId;
+	private String usuNegocio;
+	private String usuNombres;
+	private String usuApellidos;
+	private String usuEmail;
+	private String usuPassword;
+	private String usuGenero;
+	private String usuDetalles;
 	
-	public Usuario(int id, String negocio, String nombres, String apellidos, String email, String password,
-			String genero, String detalles) {
+	public Usuario(int usuId, String usuNegocio, String usuNombres, String usuApellidos, String usuEmail,
+			String usuPassword, String usuGenero, String usuDetalles) {
 		super();
-		this.id = id;
-		this.negocio = negocio;
-		this.nombres = nombres;
-		this.apellidos = apellidos;
-		this.email = email;
-		this.password = password;
-		this.genero = genero;
-		this.detalles = detalles;
+		this.usuId = usuId;
+		this.usuNegocio = usuNegocio;
+		this.usuNombres = usuNombres;
+		this.usuApellidos = usuApellidos;
+		this.usuEmail = usuEmail;
+		this.usuPassword = usuPassword;
+		this.usuGenero = usuGenero;
+		this.usuDetalles = usuDetalles;
 	}
 
-	public int getId() {
-		return id;
+	public int getUsuId() {
+		return usuId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setUsuId(int usuId) {
+		this.usuId = usuId;
 	}
 
-	public String getNegocio() {
-		return negocio;
+	public String getUsuNegocio() {
+		return usuNegocio;
 	}
 
-	public void setNegocio(String negocio) {
-		this.negocio = negocio;
+	public void setUsuNegocio(String usuNegocio) {
+		this.usuNegocio = usuNegocio;
 	}
 
-	public String getNombres() {
-		return nombres;
+	public String getUsuNombres() {
+		return usuNombres;
 	}
 
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
+	public void setUsuNombres(String usuNombres) {
+		this.usuNombres = usuNombres;
 	}
 
-	public String getApellidos() {
-		return apellidos;
+	public String getUsuApellidos() {
+		return usuApellidos;
 	}
 
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	public void setUsuApellidos(String usuApellidos) {
+		this.usuApellidos = usuApellidos;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUsuEmail() {
+		return usuEmail;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuEmail(String usuEmail) {
+		this.usuEmail = usuEmail;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getUsuPassword() {
+		return usuPassword;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setUsuPassword(String usuPassword) {
+		this.usuPassword = usuPassword;
 	}
 
-	public String getGenero() {
-		return genero;
+	public String getUsuGenero() {
+		return usuGenero;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setUsuGenero(String usuGenero) {
+		this.usuGenero = usuGenero;
 	}
 
-	public String getDetalles() {
-		return detalles;
+	public String getUsuDetalles() {
+		return usuDetalles;
 	}
 
-	public void setDetalles(String detalles) {
-		this.detalles = detalles;
+	public void setUsuDetalles(String usuDetalles) {
+		this.usuDetalles = usuDetalles;
 	}
+	
 }
