@@ -86,5 +86,5 @@ public class Usuario {
 	public void setUsuDetalles(String usuDetalles) {
 		this.usuDetalles = usuDetalles;
 	}
-	
+
 }
