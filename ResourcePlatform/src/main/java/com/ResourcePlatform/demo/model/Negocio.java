@@ -10,6 +10,7 @@ public class Negocio {
 	private String negPassword;
 	private String negEmail;
 	private String negDetalles;
+	
 	public Negocio(int negId, String negUsuario, String negNombre, String negDireccion, String negCodigoPostal,
 			int negTelefono, String negPassword, String negEmail, String negDetalles) {
 		super();

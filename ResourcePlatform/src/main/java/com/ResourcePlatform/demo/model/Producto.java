@@ -8,6 +8,7 @@ public class Producto {
 	private double proPrecio;
 	private String proCodigo;
 	private String proDetalles;
+	
 	public Producto(int proId, String proNegocio, String proNombre, int proStock, double proPrecio, String proCodigo,
 			String proDetalles) {
 		super();
