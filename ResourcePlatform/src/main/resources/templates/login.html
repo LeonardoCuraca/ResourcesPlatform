@@ -1,20 +1,22 @@
 <html>
   <head><title>Transparent Login Form with Floating Placeholder</title>
+  	<meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="static/css/loginStyle.css" th:href="@{/css/loginStyle.css}">
   </head>
   <body>
     <div class="box">
-      <h2>Login</h2>
+      <h2>Iniciar Sesión</h2>
       <form action="" method="post">
         <div class="inputBox">
           <input type="text" name="login_username" required>
-          <label>Username</label>
+          <label>Usuario</label>
         </div>
         <div class="inputBox">
           <input type="password" name="login_password" required>
-          <label>Password</label>
+          <label>Contraseña</label>
         </div>
-        <input type="submit" name="" value="Submit">
+        <input type="submit" name="" value="Entrar"><br>
+        ¿Primera vez aquí? <a class="registerLink" href="/register">Regístrate</a>
       </form>
     </div>
   </body>

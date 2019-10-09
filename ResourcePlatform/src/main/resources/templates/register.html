@@ -6,7 +6,7 @@
   <body>
     <div class="box">
       <h2>Registro</h2>
-      <form action="" method="post">
+      <form action="" method="post" autocomplete="off">
         <div class="inputBox">
           <input type="text" name="register_name" required>
           <label>Nombres</label>
@@ -15,9 +15,27 @@
           <input type="text" name="register_lastname" required>
           <label>Apellidos</label>
         </div>
+        <div class="radio-group">
+        	<label class="radio">
+        		<input type="radio" value="male" name="register_gender" required>
+        		Hombre
+        		<span></span>
+        	</label>
+        	<label class="radio">
+        		<input type="radio" value="female" name="register_gender" required>
+        		Mujer
+        		<span></span>
+        	</label>
+        	<label class="radio">
+        		<input type="radio" value="other" name="register_gender" required>
+        		Otro
+        		<span></span>
+        	</label>
+        </div>
         <div class="inputBox">
-          <input type="email" name="register_email" required>
-          <label>Correo</label>
+          <input type="text" style="width: 68%;" name="register_email" required>
+          <p>@platform.com</p>
+          <label>Usuario</label>
         </div>
         <div class="inputBox">
           <input type="password" name="register_password" required>
