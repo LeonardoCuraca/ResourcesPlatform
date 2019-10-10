@@ -21,4 +21,9 @@ public class UserController {
 		return "register";
 	}
 	
+	@GetMapping("/businnesView")
+	public String businessView() {
+		return "businessView";
+	}
+	
 }
