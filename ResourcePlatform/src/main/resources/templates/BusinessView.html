@@ -1,19 +1,29 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
   <head><title>Business</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="static/css/businessViewStyle.css" th:href="@{/css/businessViewStyle.css}">
   </head>
   <body>
-    <header>
-      Welcome
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      <a class="contact" href="#"><button>Contact</button></a>
-    </header>
+    <div class="headerContainer">
+    	<header>
+	      <p>Welcome</p>
+	      <nav>
+	        <ul class="nav_links">
+	          <li><a href="#">Services</a></li>
+	          <li><a href="#">Projects</a></li>
+	          <li><a href="#">About</a></li>
+	        </ul>
+	      </nav>
+	      <a class="contact" href="#"><button>Contact</button></a>
+	    </header>
+    </div>
+    <div class="structure">
+    	<div class="all-business">
+	      <ul class="business-list">
+	        <li th:each="negocio : ${listBusiness}"><a class="business" th:text="${negocio.negNombre}">Business 1</a></li>
+	        <li	><a class="business" style="font-size: 48px;">+</a></li>
+	      </ul>
+	    </div>
+    </div>
   </body>
 </html>

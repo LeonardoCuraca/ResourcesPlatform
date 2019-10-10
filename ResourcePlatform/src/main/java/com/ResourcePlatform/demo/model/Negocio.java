@@ -1,33 +1,42 @@
 package com.ResourcePlatform.demo.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Negocio {
-	private int negId;
+	
+	@Id
+	@GeneratedValue
+	@Column(name = "negId")
+	private Long negId;
+	
+	@Column(name = "negUsuario")
 	private String negUsuario;
+	@Column(name = "negNombre")
 	private String negNombre;
+	@Column(name = "negDireccion")
 	private String negDireccion;
+	@Column(name = "negCodigoPostal")
 	private String negCodigoPostal;
-	private int negTelefono;
+	@Column(name = "negTelefono")
+	private String negTelefono;
+	@Column(name = "negPassword")
 	private String negPassword;
+	@Column(name = "negEmail")
 	private String negEmail;
+	@Column(name = "negDetalles")
 	private String negDetalles;
 	
-	public Negocio(int negId, String negUsuario, String negNombre, String negDireccion, String negCodigoPostal,
-			int negTelefono, String negPassword, String negEmail, String negDetalles) {
-		super();
-		this.negId = negId;
-		this.negUsuario = negUsuario;
-		this.negNombre = negNombre;
-		this.negDireccion = negDireccion;
-		this.negCodigoPostal = negCodigoPostal;
-		this.negTelefono = negTelefono;
-		this.negPassword = negPassword;
-		this.negEmail = negEmail;
-		this.negDetalles = negDetalles;
+	public Negocio() {
+		
 	}
-	public int getNegId() {
+	public Long getNegId() {
 		return negId;
 	}
-	public void setNegId(int negId) {
+	public void setNegId(Long negId) {
 		this.negId = negId;
 	}
 	public String getNegUsuario() {
@@ -54,10 +63,10 @@ public class Negocio {
 	public void setNegCodigoPostal(String negCodigoPostal) {
 		this.negCodigoPostal = negCodigoPostal;
 	}
-	public int getNegTelefono() {
+	public String getNegTelefono() {
 		return negTelefono;
 	}
-	public void setNegTelefono(int negTelefono) {
+	public void setNegTelefono(String negTelefono) {
 		this.negTelefono = negTelefono;
 	}
 	public String getNegPassword() {

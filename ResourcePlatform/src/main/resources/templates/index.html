@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+<meta charset="UTF-8">
+<title>Bienvenido al Usuario</title>
+<body>
+<div class="container">
+
+    <h1>Lista de Usuarios</h1>
+    <a class="btn btn-success" role="button" href="/nuevo">Nuevo Usuario</a>
+    <br/><br/>
+    <table class="table table-bordered" border="1">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Genero</th>
+                <th>Detalle</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="usuario : ${listUsuarios}">
+                <td th:text="${usuario.id}">ID</td>
+                <td th:text="${usuario.usuapellido}">Apellido</td>
+                <td th:text="${usuario.usunombre}">Nombre</td>
+                <td th:text="${usuario.usuemail}">Email</td>
+                <td th:text="${usuario.usupassword}">Password</td>
+                <td th:text="${usuario.usugenero}">Genero</td>
+                <td th:text="${usuario.usudetalle}">Detalle</td>  
+                <td>
+                	<a class="btn btn-info" role="button" th:href="@{'/edit/' + ${usuario.id}}">Editar</a>
+                	<a class="btn btn-danger" role="button" th:href="@{'/delete/' + ${usuario.id}}">Eliminar</a>             	
+                </td>                 
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

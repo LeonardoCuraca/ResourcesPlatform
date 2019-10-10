@@ -1,90 +1,79 @@
 package com.ResourcePlatform.demo.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Usuario {
-	private int usuId;
-	private String usuNegocio;
-	private String usuNombres;
-	private String usuApellidos;
-	private String usuEmail;
-	private String usuPassword;
-	private String usuGenero;
-	private String usuDetalles;
 	
-	public Usuario(int usuId, String usuNegocio, String usuNombres, String usuApellidos, String usuEmail,
-			String usuPassword, String usuGenero, String usuDetalles) {
-		super();
-		this.usuId = usuId;
-		this.usuNegocio = usuNegocio;
-		this.usuNombres = usuNombres;
-		this.usuApellidos = usuApellidos;
-		this.usuEmail = usuEmail;
-		this.usuPassword = usuPassword;
-		this.usuGenero = usuGenero;
-		this.usuDetalles = usuDetalles;
+	@Id
+	@GeneratedValue
+	@Column(name = "id")
+	private Long id;
+	
+	@Column(name = "usuapellido")	
+	private String usuapellido;
+	@Column(name = "usunombre")
+	private String usunombre;
+	@Column(name = "usuemail")
+	private String usuemail;
+	@Column(name = "usupassword")
+	private String usupassword;
+	@Column(name = "usugenero")
+	private String usugenero;
+	@Column(name = "usudetalle")
+	private String usudetalle;
+		
+	public Usuario() {
+		
+	}
+	
+	public Long getId() {
+		return id;
 	}
 
-	public int getUsuId() {
-		return usuId;
+	public void setId(Long id) {
+		this.id = id;
 	}
-
-	public void setUsuId(int usuId) {
-		this.usuId = usuId;
+	public String getUsuapellido() {
+		return usuapellido;
 	}
-
-	public String getUsuNegocio() {
-		return usuNegocio;
+	public void setUsuapellido(String usuapellido) {
+		this.usuapellido = usuapellido;
 	}
-
-	public void setUsuNegocio(String usuNegocio) {
-		this.usuNegocio = usuNegocio;
+	public String getUsunombre() {
+		return usunombre;
 	}
-
-	public String getUsuNombres() {
-		return usuNombres;
+	public void setUsunombre(String usunombre) {
+		this.usunombre = usunombre;
 	}
-
-	public void setUsuNombres(String usuNombres) {
-		this.usuNombres = usuNombres;
+	public String getUsuemail() {
+		return usuemail;
 	}
-
-	public String getUsuApellidos() {
-		return usuApellidos;
+	public void setUsuemail(String usuemail) {
+		this.usuemail = usuemail;
 	}
-
-	public void setUsuApellidos(String usuApellidos) {
-		this.usuApellidos = usuApellidos;
+	public String getUsupassword() {
+		return usupassword;
 	}
-
-	public String getUsuEmail() {
-		return usuEmail;
+	public void setUsupassword(String usupassword) {
+		this.usupassword = usupassword;
 	}
-
-	public void setUsuEmail(String usuEmail) {
-		this.usuEmail = usuEmail;
+	public String getUsugenero() {
+		return usugenero;
 	}
-
-	public String getUsuPassword() {
-		return usuPassword;
+	public void setUsugenero(String usugenero) {
+		this.usugenero = usugenero;
 	}
-
-	public void setUsuPassword(String usuPassword) {
-		this.usuPassword = usuPassword;
+	public String getUsudetalle() {
+		return usudetalle;
 	}
-
-	public String getUsuGenero() {
-		return usuGenero;
+	public void setUsudetalle(String usudetalle) {
+		this.usudetalle = usudetalle;
 	}
-
-	public void setUsuGenero(String usuGenero) {
-		this.usuGenero = usuGenero;
-	}
-
-	public String getUsuDetalles() {
-		return usuDetalles;
-	}
-
-	public void setUsuDetalles(String usuDetalles) {
-		this.usuDetalles = usuDetalles;
-	}
+	
 
 }

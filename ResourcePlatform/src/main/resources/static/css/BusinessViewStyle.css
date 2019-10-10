@@ -1,8 +1,11 @@
-* {
+body {
+  background-color: #24252A;
+}
+
+.headerContainer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A;
 }
 
 li, a, button {
@@ -18,6 +21,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+}
+
+header p {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .nav_links {
@@ -49,3 +58,32 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
+
+.structure {
+  margin: 40px;
+}
+
+.business-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.business-list li {
+  line-height: 120px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.business {
+  width: 240px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5%;
+  text-align: center;
+  background-color: #6e7dab;
+  font-size: 22px;
+  font-weight: 700;
+}
+
